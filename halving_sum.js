@@ -8,6 +8,11 @@ Example
 25  =>  25 + 12 + 6 + 3 + 1 = 47
 */
 
-function halvingSum(n) {
-    
+const halvingSum = (n) => {
+  sum = n;  
+  while(n > 1) {
+    sum += Math.floor(n/2);
+    n = Math.floor(n/2);
+  }
+  return sum;
 }
